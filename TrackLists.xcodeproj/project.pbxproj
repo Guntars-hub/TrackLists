@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		D01C419825CAC96C001B244F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C419725CAC96C001B244F /* AppDelegate.swift */; };
 		D01C419A25CAC96C001B244F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C419925CAC96C001B244F /* SceneDelegate.swift */; };
-		D01C419C25CAC96C001B244F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C419B25CAC96C001B244F /* ViewController.swift */; };
 		D01C419F25CAC96C001B244F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01C419D25CAC96C001B244F /* Main.storyboard */; };
 		D01C41A125CAC978001B244F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01C41A025CAC978001B244F /* Assets.xcassets */; };
 		D01C41A425CAC978001B244F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01C41A225CAC978001B244F /* LaunchScreen.storyboard */; };
+		D01C41B325CACAE8001B244F /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C41B225CACAE8001B244F /* TrackListTableViewController.swift */; };
+		D01C41B725CACB17001B244F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C41B625CACB17001B244F /* DetailViewController.swift */; };
+		D01C41BA25CAD16E001B244F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C41B925CAD16E001B244F /* Song.swift */; };
+		D01C41BD25CAD206001B244F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C41BC25CAD206001B244F /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D01C419425CAC96C001B244F /* TrackLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01C419725CAC96C001B244F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D01C419925CAC96C001B244F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D01C419B25CAC96C001B244F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D01C419E25CAC96C001B244F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D01C41A025CAC978001B244F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D01C41A325CAC978001B244F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D01C41A525CAC978001B244F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01C41B225CACAE8001B244F /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
+		D01C41B625CACB17001B244F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D01C41B925CAD16E001B244F /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		D01C41BC25CAD206001B244F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		D01C419625CAC96C001B244F /* TrackLists */ = {
 			isa = PBXGroup;
 			children = (
-				D01C419725CAC96C001B244F /* AppDelegate.swift */,
-				D01C419925CAC96C001B244F /* SceneDelegate.swift */,
-				D01C419B25CAC96C001B244F /* ViewController.swift */,
-				D01C419D25CAC96C001B244F /* Main.storyboard */,
+				D01C41AC25CAC9A9001B244F /* Delagetw */,
+				D01C41B125CACA23001B244F /* ModelManager */,
+				D01C41B025CACA18001B244F /* Model */,
+				D01C41AE25CAC9F2001B244F /* View */,
+				D01C41AF25CACA05001B244F /* Controllers */,
 				D01C41A025CAC978001B244F /* Assets.xcassets */,
-				D01C41A225CAC978001B244F /* LaunchScreen.storyboard */,
 				D01C41A525CAC978001B244F /* Info.plist */,
 			);
 			path = TrackLists;
+			sourceTree = "<group>";
+		};
+		D01C41AC25CAC9A9001B244F /* Delagetw */ = {
+			isa = PBXGroup;
+			children = (
+				D01C419725CAC96C001B244F /* AppDelegate.swift */,
+				D01C419925CAC96C001B244F /* SceneDelegate.swift */,
+			);
+			path = Delagetw;
+			sourceTree = "<group>";
+		};
+		D01C41AE25CAC9F2001B244F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D01C419D25CAC96C001B244F /* Main.storyboard */,
+				D01C41A225CAC978001B244F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D01C41AF25CACA05001B244F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D01C41B225CACAE8001B244F /* TrackListTableViewController.swift */,
+				D01C41B625CACB17001B244F /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D01C41B025CACA18001B244F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D01C41B925CAD16E001B244F /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D01C41B125CACA23001B244F /* ModelManager */ = {
+			isa = PBXGroup;
+			children = (
+				D01C41BC25CAD206001B244F /* DataManager.swift */,
+			);
+			path = ModelManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D01C419C25CAC96C001B244F /* ViewController.swift in Sources */,
 				D01C419825CAC96C001B244F /* AppDelegate.swift in Sources */,
+				D01C41BD25CAD206001B244F /* DataManager.swift in Sources */,
 				D01C419A25CAC96C001B244F /* SceneDelegate.swift in Sources */,
+				D01C41B325CACAE8001B244F /* TrackListTableViewController.swift in Sources */,
+				D01C41B725CACB17001B244F /* DetailViewController.swift in Sources */,
+				D01C41BA25CAD16E001B244F /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lv.accenture.bootcamp.TrackLists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -310,6 +363,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lv.accenture.bootcamp.TrackLists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
